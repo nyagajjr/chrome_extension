@@ -7,6 +7,7 @@ let ulEl = document.querySelector("#ul-el")
 btn.addEventListener("click", () => {
     elems.push(inputEl.value)
     listThem()
+    clearField()
 })
 
 
@@ -18,3 +19,7 @@ function listThem(){
     ulEl.innerHTML = items
 }
 
+//Clearing the field after hitting the buy button
+function clearField(){
+    document.querySelector("#input-el").value = ""
+}

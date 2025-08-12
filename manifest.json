@@ -4,6 +4,6 @@
     "name": "tracker",
     "action": {
         "default_popup": "extension.html",
-        "default_icon": "images.png"
+        "default_icon": "ninja.jpg"
     }
 }

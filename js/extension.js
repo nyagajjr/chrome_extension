@@ -5,10 +5,21 @@ let inputEl = document.querySelector("#input-el")
 let ulEl = document.querySelector("#ul-el")
 let anchorEl = document.querySelector("#anchor-el")
 
+// Actions of the button
 btn.addEventListener("click", () => {
     elems.push(inputEl.value)
+
     listThem()
+
+    //storing in the localstorage
+    localStorage.setItem("elems", JSON.stringify(elems))
+    console.log(localStorage.getItem("elems"))
+
+    //clearing the input field
     clearField()
+
+
+    
 })
 
 
